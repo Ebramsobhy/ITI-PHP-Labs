@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Form</title>
+</head>
+<link rel="stylesheet" href="./form.css">
+<body>
+    <div class="form-container">
+  <form method="POST" action="submit.php">
+    <label for="first-name">First Name:</label>
+    <input type="text" name="first-name" id="first-name" required><br>
+
+    <label for="last-name">Last Name:</label>
+    <input type="text" name="last-name" id="last-name" required><br>
+
+    <label for="address">Address:</label>
+    <textarea name="address" id="address" rows="5" cols="50" required></textarea><br>    
+
+    <label for="country">Country:</label>
+    <select name="country" id="country">
+      <option value="usa">Egypt</option>
+      <option value="canada">Algeria</option>
+      <option value="mexico">Libya</option>
+    </select><br>
+
+    <label for="gender">Gender:</label>
+    <input type="radio" name="gender" id="gender-male" value="male" required>
+    <label for="gender-male">Male</label>
+    
+    <input type="radio" name="gender" id="gender-female" value="female" required>
+    <label for="gender-female">Female</label> <br> <br>
+
+    <label>Skills:</label>
+    <input type="checkbox" name="skills[]" value="PHP">PHP<br>
+    <input type="checkbox" name="skills[]" value="MySQL">MySQL<br>
+    <input type="checkbox" name="skills[]" value="javascript">JavaScript<br>
+     
+    <br>
+
+    <label for="username">Username:</label>
+    <input type="text" name="username" id="username" required><br>
+
+    <label for="password">Password:</label>
+    <input type="password" name="password" id="password" required><br>
+
+    <label for="department">Department:</label>
+    <input type="text" name="department" id="department" required><br>
+
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+  </form> 
+    </div>
+</body>
+</html>
